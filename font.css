@@ -20,9 +20,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
-arial {
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+.arial {
     font-family: Arial;
 }
-lucidasans {
-    font-family:'Lucida Sans'
+.funneldisplay {
+    font-family:'Funnel Display'
 }
