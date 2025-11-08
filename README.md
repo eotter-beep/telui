@@ -8,7 +8,6 @@ TelUI is a Electron-based UI framework that packages a handful of reusable front
 - Micro-interaction helpers in `animation.css` (e.g., `.hover-fade`, `light`) for subtle hover states or accent passes.
 - Google Fonts integration (Funnel Display) plus opt-in utility classes like `.arial`.
 - Drop-in icon assets under `icons/` to help illustrate loading and status states.
-- Reference UI mock (`gui`) for quickly checking what the default stack should look like.
 
 ## Quick start
 
@@ -28,7 +27,6 @@ font.css       # Typography utilities and Google Fonts import
 color.css      # Color tokens (e.g., gentleblue, brightblue, gray/grey, green)
 animation.css  # Hover fade helper and light filter effects
 header.css     # Structural tweaks for header containers
-gui            # PNG mock / screenshot of the TelUI sample screen
 icons/         # Shared bitmap / gif assets (e.g., loading.gif)
 package.json   # Dependencies and npm scripts
 ```
