@@ -5,8 +5,10 @@ TelUI is a Electron-based UI framework that packages a handful of reusable front
 ## Features
 - Bundled Electron runner (`npm start`) that serves `index.html` for instant desktop previews.
 - Tokenized styling layers: `color.css`, `font.css`, and `header.css` keep presentation rules isolated and easy to remix.
+- Micro-interaction helpers in `animation.css` (e.g., `.hover-fade`, `light`) for subtle hover states or accent passes.
 - Google Fonts integration (Funnel Display) plus opt-in utility classes like `.arial`.
 - Drop-in icon assets under `icons/` to help illustrate loading and status states.
+- Reference UI mock (`gui`) for quickly checking what the default stack should look like.
 
 ## Quick start
 
@@ -24,7 +26,9 @@ index.js       # Electron bootstrapper
 index.html     # Demo canvas that consumes TelUI styles
 font.css       # Typography utilities and Google Fonts import
 color.css      # Color tokens (e.g., gentleblue, brightblue, gray/grey, green)
+animation.css  # Hover fade helper and light filter effects
 header.css     # Structural tweaks for header containers
+gui            # PNG mock / screenshot of the TelUI sample screen
 icons/         # Shared bitmap / gif assets (e.g., loading.gif)
 package.json   # Dependencies and npm scripts
 ```
@@ -37,6 +41,7 @@ package.json   # Dependencies and npm scripts
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="animation.css">
     ```
 
 2. Apply the provided classes or custom element tags:
@@ -52,7 +57,16 @@ package.json   # Dependencies and npm scripts
 
    `font.css` exposes `.funneldisplay` and `.arial`. The color tokens (`gentleblue`, `brightblue`, `gray`, `grey`, `green`) can be used either as element selectors or converted into classes if you prefer `.gentleblue` syntax.
 
-3. Reuse icons by pointing to the assets directory:
+3. Add animation helpers where needed:
+
+    ```html
+    <button class="hover-fade funneldisplay">Hover me</button>
+    <light>Accent block</light>
+    ```
+
+   `.hover-fade` applies the shared opacity/scale transition; the `light` tag gives you a filtered highlight wrapper without touching inline styles.
+
+4. Reuse icons by pointing to the assets directory:
 
     ```html
     <img src="icons/loading.gif" alt="Loading indicator">
