@@ -15,3 +15,5 @@ Beautify numerous colors
 TelUI final updates
 
 Electron package addition
+
+TelUI header updates (quality of life) and README fixes

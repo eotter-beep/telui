@@ -42,10 +42,12 @@ package.json   # Dependencies and npm scripts
 2. Apply the provided classes or custom element tags:
 
     ```html
-    <header class="gentleblue">
-      <h1 class="funneldisplay">TelUI</h1>
+    <gentleblue>
+    <header>
+      <h1>TelUI</h1>
     </header>
     <p class="arial">Prototype copy goes here.</p>
+    </gentleblue>
     ```
 
    `font.css` exposes `.funneldisplay` and `.arial`. The color tokens (`gentleblue`, `brightblue`, `gray`, `grey`, `green`) can be used either as element selectors or converted into classes if you prefer `.gentleblue` syntax.
