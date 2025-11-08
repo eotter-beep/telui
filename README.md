@@ -64,4 +64,4 @@ package.json   # Dependencies and npm scripts
 
 ## License
 
-Unless stated otherwise in individual files, TelUI is distributed under the MIT License (see the header comment in `font.css` for the canonical notice). Please include the license text when redistributing TelUI or derivative works.
+Unless stated otherwise in individual files, TelUI is distributed under the MIT License. Please include the license text when redistributing TelUI or derivative works, unless you made a index.html or other HTML and configurations when published.
