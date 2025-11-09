@@ -1,6 +1,6 @@
 # TelUI
 
-TelUI is a Electron-based UI framework that packages a handful of reusable front-end primitives—color utilities, typography helpers, and basic structural styles—so you can prototype simple desktop UI ideas with minimal setup.
+TelUI is a Electron-based UI framework that packages a handful of reusable front-end primitives—color utilities, typography helpers, and basic structural styles—so you can make simple desktop UI ideas with minimal setup.
 
 ## Features
 - Bundled Electron runner (`npm start`) that serves `index.html` for instant desktop previews.
