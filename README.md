@@ -4,7 +4,7 @@ TelUI is a Electron-based UI framework that packages a handful of reusable front
 
 ## Features
 - Bundled Electron runner (`npm start`) that serves `index.html` for instant desktop previews.
-- Tokenized styling layers: `color.css`, `font.css`, and `header.css` keep presentation rules isolated and easy to remix.
+- Tokenized styling layers: `color.css`, `font.css`, `header.css`, and `align.css` keep presentation rules isolated and easy to remix.
 - Micro-interaction helpers in `animation.css` (e.g., `.hover-fade`, `light`) for subtle hover states or accent passes.
 - Google Fonts integration (Funnel Display) plus opt-in utility classes like `.arial`.
 - Drop-in icon assets under `icons/` to help illustrate loading and status states.
@@ -27,6 +27,7 @@ font.css       # Typography utilities and Google Fonts import
 color.css      # Color tokens (e.g., gentleblue, brightblue, gray/grey, green)
 animation.css  # Hover fade helper and light filter effects
 header.css     # Structural tweaks for header containers
+align.css      # `<center>` helper to horizontally center any block
 icons/         # Shared bitmap / gif assets (e.g., loading.gif)
 package.json   # Dependencies and npm scripts
 ```
@@ -40,6 +41,7 @@ package.json   # Dependencies and npm scripts
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="align.css">
     ```
 
 2. Apply the provided classes or custom element tags:
@@ -64,7 +66,17 @@ package.json   # Dependencies and npm scripts
 
    `.hover-fade` applies the shared opacity/scale transition; the `light` tag gives you a filtered highlight wrapper without touching inline styles.
 
-4. Reuse icons by pointing to the assets directory:
+4. Center blocks with the dedicated tag:
+
+    ```html
+    <center>
+      <button>CTA</button>
+    </center>
+    ```
+
+   The `align.css` stylesheet constrains `<center>` to `max-width: fit-content` and uses auto horizontal margins so any nested elements stay centered without extra wrappers.
+
+5. Reuse icons by pointing to the assets directory:
 
     ```html
     <img src="icons/loading.gif" alt="Loading indicator">
