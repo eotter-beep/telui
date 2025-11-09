@@ -1,20 +1,20 @@
-gentleblue {
+.gentleblue {
     background-color: aquamarine;
     display: block;
 }
-brightblue {
+.brightblue {
     background-color: blue;
     display: block;
 }
-gray {
+.gray {
     background-color: grey;
     display: block;
 }
-grey {
+.grey {
     background-color: grey;
     display: block;
 }
-green {
+.green {
     background-color: green;
     display: block;
 }
