@@ -12,7 +12,7 @@ TelUI is a Electron-based UI framework that packages a handful of reusable front
 ## Quick start
 
 ```bash
-npm install
+npm init telui
 npm run start
 ```
 
