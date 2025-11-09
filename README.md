@@ -13,7 +13,7 @@ TelUI is a Electron-based UI framework that packages a handful of reusable front
 
 ```bash
 npm install
-npm start
+npm run start
 ```
 
 The app launches an 800×600 Electron window that loads `index.html`. Modify any CSS or HTML file and restart (or reload) to see the changes.
