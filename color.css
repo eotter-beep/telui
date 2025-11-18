@@ -1,0 +1,46 @@
+.gentleblue {
+    background-color: aquamarine;
+    display: block;
+}
+.gentlebluetext {
+    color: aquamarine;
+    display: block;
+}
+.brightblue {
+    background-color: blue;
+    display: block;
+}
+.brightbluetext {
+    color: blue;
+    display: block;
+}
+.gray {
+    background-color: grey;
+    display: block;
+}
+.graytext {
+    color: grey;
+    display: block;
+}
+.grey {
+    background-color: grey;
+    display: block;
+}
+.greytext {
+    color: grey;
+    display: block;
+}
+.green {
+    background-color: green;
+    display: block;
+}
+.greentext {
+    color: green;
+    display: block;
+}
+.white {
+    background-color: white;
+}
+.whitetext {
+    color: white;
+}
